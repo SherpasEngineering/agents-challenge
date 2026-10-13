@@ -1,0 +1,44 @@
+{
+  "fichero": "03-ticket-gasolinera.pdf",
+  "cliente_asesoria": {
+    "nombre": "Transportes Rápidos Levante SL",
+    "nif": "B46822904"
+  },
+  "facturas_esperadas": [
+    {
+      "tipo": "recibida",
+      "numero": "T26-0094412",
+      "fecha": "2026-10-07",
+      "vencimiento": null,
+      "contraparte": "Gasolineras Ruta SL",
+      "contraparte_nif": "B98120041",
+      "concepto": "GASOLEO A  SURT.04",
+      "categoria": "combustible",
+      "base_imponible": 374.26,
+      "iva_pct": 21,
+      "iva_importe": 78.59,
+      "irpf_pct": 0,
+      "irpf_importe": 0,
+      "total": 452.85,
+      "desglose_iva": [
+        {
+          "pct": 21,
+          "base": 374.26,
+          "cuota": 78.59
+        }
+      ],
+      "lineas": [
+        {
+          "concepto": "GASOLEO A  SURT.04",
+          "cantidad": 312.4,
+          "precio": 1.198,
+          "iva_pct": 21
+        }
+      ]
+    }
+  ],
+  "notas": [
+    "Factura simplificada (ticket): no tiene datos del receptor.",
+    "El total incluye IVA; la base y la cuota vienen en el desglose del pie."
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "fichero": "01-alquiler-con-retencion.pdf",
+  "cliente_asesoria": {
+    "nombre": "Bar Restaurante La Esquina SL",
+    "nif": "B46884326"
+  },
+  "facturas_esperadas": [
+    {
+      "tipo": "recibida",
+      "numero": "ARCO-2026/0187",
+      "fecha": "2026-10-01",
+      "vencimiento": "2026-10-05",
+      "contraparte": "Inmobiliaria Arco SL",
+      "contraparte_nif": "B46213583",
+      "concepto": "Alquiler local C/ Cuba 45 - octubre 2026",
+      "categoria": "alquiler",
+      "base_imponible": 1350,
+      "iva_pct": 21,
+      "iva_importe": 283.5,
+      "irpf_pct": 19,
+      "irpf_importe": 256.5,
+      "total": 1377,
+      "desglose_iva": [
+        {
+          "pct": 21,
+          "base": 1350,
+          "cuota": 283.5
+        }
+      ],
+      "lineas": [
+        {
+          "concepto": "Alquiler local C/ Cuba 45 - octubre 2026",
+          "cantidad": 1,
+          "precio": 1350,
+          "iva_pct": 21
+        }
+      ]
+    }
+  ],
+  "notas": [
+    "El cliente de la asesoría es el RECEPTOR: es una factura recibida (gasto).",
+    "Lleva retención de IRPF del 19% (alquiler de local): el total es base + IVA - IRPF."
+  ]
+}

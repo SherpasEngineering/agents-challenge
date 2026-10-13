@@ -1,0 +1,832 @@
+{
+  "fichero": "06-factura-larga-peajes.pdf",
+  "cliente_asesoria": {
+    "nombre": "Transportes Rápidos Levante SL",
+    "nif": "B46822904"
+  },
+  "facturas_esperadas": [
+    {
+      "tipo": "recibida",
+      "numero": "AM2026/0604",
+      "fecha": "2026-10-02",
+      "vencimiento": "2026-10-17",
+      "contraparte": "Autopistas del Mediterráneo SA",
+      "contraparte_nif": "A82097312",
+      "concepto": "Peajes vía-T septiembre 2026 (132 pasos)",
+      "categoria": "peajes",
+      "base_imponible": 767.45,
+      "iva_pct": 21,
+      "iva_importe": 161.16,
+      "irpf_pct": 0,
+      "irpf_importe": 0,
+      "total": 928.61,
+      "desglose_iva": [
+        {
+          "pct": 21,
+          "base": 767.45,
+          "cuota": 161.16
+        }
+      ],
+      "lineas": [
+        {
+          "concepto": "01/09 · 4821 LKD · AP-2 Zaragoza – Fraga",
+          "cantidad": 1,
+          "precio": 9.8,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "01/09 · 4821 LKD · AP-7 Girona Norte – La Jonquera",
+          "cantidad": 1,
+          "precio": 7.15,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "01/09 · 1937 MBF · AP-7 Castellón Norte – Torreblanca",
+          "cantidad": 1,
+          "precio": 6.4,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "01/09 · 1937 MBF · AP-2 Zaragoza – Fraga",
+          "cantidad": 1,
+          "precio": 9.8,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "01/09 · 1937 MBF · AP-7 Girona Norte – La Jonquera",
+          "cantidad": 1,
+          "precio": 7.15,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "01/09 · 6604 MCX · AP-7 Valencia Sur – Silla",
+          "cantidad": 1,
+          "precio": 2.35,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "02/09 · 4821 LKD · AP-7 Sagunto – Puçol",
+          "cantidad": 1,
+          "precio": 3.95,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "02/09 · 4821 LKD · AP-7 Valencia Sur – Silla",
+          "cantidad": 1,
+          "precio": 2.35,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "02/09 · 4821 LKD · AP-7 Castellón Norte – Torreblanca",
+          "cantidad": 1,
+          "precio": 6.4,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "02/09 · 1937 MBF · AP-68 Logroño – Haro",
+          "cantidad": 1,
+          "precio": 5.6,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "02/09 · 6604 MCX · AP-7 Girona Norte – La Jonquera",
+          "cantidad": 1,
+          "precio": 7.15,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "02/09 · 6604 MCX · AP-68 Logroño – Haro",
+          "cantidad": 1,
+          "precio": 5.6,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "03/09 · 4821 LKD · AP-2 Zaragoza – Fraga",
+          "cantidad": 1,
+          "precio": 9.8,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "03/09 · 1937 MBF · AP-7 Castellón Norte – Torreblanca",
+          "cantidad": 1,
+          "precio": 6.4,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "03/09 · 1937 MBF · AP-2 Zaragoza – Fraga",
+          "cantidad": 1,
+          "precio": 9.8,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "03/09 · 6604 MCX · AP-7 Valencia Sur – Silla",
+          "cantidad": 1,
+          "precio": 2.35,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "03/09 · 6604 MCX · AP-7 Castellón Norte – Torreblanca",
+          "cantidad": 1,
+          "precio": 6.4,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "03/09 · 6604 MCX · AP-2 Zaragoza – Fraga",
+          "cantidad": 1,
+          "precio": 9.8,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "04/09 · 4821 LKD · AP-7 Sagunto – Puçol",
+          "cantidad": 1,
+          "precio": 3.95,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "04/09 · 4821 LKD · AP-7 Valencia Sur – Silla",
+          "cantidad": 1,
+          "precio": 2.35,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "04/09 · 1937 MBF · AP-68 Logroño – Haro",
+          "cantidad": 1,
+          "precio": 5.6,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "04/09 · 1937 MBF · AP-7 Sagunto – Puçol",
+          "cantidad": 1,
+          "precio": 3.95,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "04/09 · 1937 MBF · AP-7 Valencia Sur – Silla",
+          "cantidad": 1,
+          "precio": 2.35,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "04/09 · 6604 MCX · AP-7 Girona Norte – La Jonquera",
+          "cantidad": 1,
+          "precio": 7.15,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "07/09 · 4821 LKD · AP-2 Zaragoza – Fraga",
+          "cantidad": 1,
+          "precio": 9.8,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "07/09 · 4821 LKD · AP-7 Girona Norte – La Jonquera",
+          "cantidad": 1,
+          "precio": 7.15,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "07/09 · 1937 MBF · AP-7 Castellón Norte – Torreblanca",
+          "cantidad": 1,
+          "precio": 6.4,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "07/09 · 1937 MBF · AP-2 Zaragoza – Fraga",
+          "cantidad": 1,
+          "precio": 9.8,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "07/09 · 1937 MBF · AP-7 Girona Norte – La Jonquera",
+          "cantidad": 1,
+          "precio": 7.15,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "07/09 · 6604 MCX · AP-7 Valencia Sur – Silla",
+          "cantidad": 1,
+          "precio": 2.35,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "08/09 · 4821 LKD · AP-7 Sagunto – Puçol",
+          "cantidad": 1,
+          "precio": 3.95,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "08/09 · 4821 LKD · AP-7 Valencia Sur – Silla",
+          "cantidad": 1,
+          "precio": 2.35,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "08/09 · 4821 LKD · AP-7 Castellón Norte – Torreblanca",
+          "cantidad": 1,
+          "precio": 6.4,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "08/09 · 1937 MBF · AP-68 Logroño – Haro",
+          "cantidad": 1,
+          "precio": 5.6,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "08/09 · 6604 MCX · AP-7 Girona Norte – La Jonquera",
+          "cantidad": 1,
+          "precio": 7.15,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "08/09 · 6604 MCX · AP-68 Logroño – Haro",
+          "cantidad": 1,
+          "precio": 5.6,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "09/09 · 4821 LKD · AP-2 Zaragoza – Fraga",
+          "cantidad": 1,
+          "precio": 9.8,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "09/09 · 1937 MBF · AP-7 Castellón Norte – Torreblanca",
+          "cantidad": 1,
+          "precio": 6.4,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "09/09 · 1937 MBF · AP-2 Zaragoza – Fraga",
+          "cantidad": 1,
+          "precio": 9.8,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "09/09 · 6604 MCX · AP-7 Valencia Sur – Silla",
+          "cantidad": 1,
+          "precio": 2.35,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "09/09 · 6604 MCX · AP-7 Castellón Norte – Torreblanca",
+          "cantidad": 1,
+          "precio": 6.4,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "09/09 · 6604 MCX · AP-2 Zaragoza – Fraga",
+          "cantidad": 1,
+          "precio": 9.8,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "10/09 · 4821 LKD · AP-7 Sagunto – Puçol",
+          "cantidad": 1,
+          "precio": 3.95,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "10/09 · 4821 LKD · AP-7 Valencia Sur – Silla",
+          "cantidad": 1,
+          "precio": 2.35,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "10/09 · 1937 MBF · AP-68 Logroño – Haro",
+          "cantidad": 1,
+          "precio": 5.6,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "10/09 · 1937 MBF · AP-7 Sagunto – Puçol",
+          "cantidad": 1,
+          "precio": 3.95,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "10/09 · 1937 MBF · AP-7 Valencia Sur – Silla",
+          "cantidad": 1,
+          "precio": 2.35,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "10/09 · 6604 MCX · AP-7 Girona Norte – La Jonquera",
+          "cantidad": 1,
+          "precio": 7.15,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "11/09 · 4821 LKD · AP-2 Zaragoza – Fraga",
+          "cantidad": 1,
+          "precio": 9.8,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "11/09 · 4821 LKD · AP-7 Girona Norte – La Jonquera",
+          "cantidad": 1,
+          "precio": 7.15,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "11/09 · 4821 LKD · AP-68 Logroño – Haro",
+          "cantidad": 1,
+          "precio": 5.6,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "11/09 · 1937 MBF · AP-7 Castellón Norte – Torreblanca",
+          "cantidad": 1,
+          "precio": 6.4,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "11/09 · 6604 MCX · AP-7 Valencia Sur – Silla",
+          "cantidad": 1,
+          "precio": 2.35,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "11/09 · 6604 MCX · AP-7 Castellón Norte – Torreblanca",
+          "cantidad": 1,
+          "precio": 6.4,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "14/09 · 4821 LKD · AP-7 Sagunto – Puçol",
+          "cantidad": 1,
+          "precio": 3.95,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "14/09 · 4821 LKD · AP-7 Valencia Sur – Silla",
+          "cantidad": 1,
+          "precio": 2.35,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "14/09 · 4821 LKD · AP-7 Castellón Norte – Torreblanca",
+          "cantidad": 1,
+          "precio": 6.4,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "14/09 · 1937 MBF · AP-68 Logroño – Haro",
+          "cantidad": 1,
+          "precio": 5.6,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "14/09 · 6604 MCX · AP-7 Girona Norte – La Jonquera",
+          "cantidad": 1,
+          "precio": 7.15,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "14/09 · 6604 MCX · AP-68 Logroño – Haro",
+          "cantidad": 1,
+          "precio": 5.6,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "15/09 · 4821 LKD · AP-2 Zaragoza – Fraga",
+          "cantidad": 1,
+          "precio": 9.8,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "15/09 · 1937 MBF · AP-7 Castellón Norte – Torreblanca",
+          "cantidad": 1,
+          "precio": 6.4,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "15/09 · 1937 MBF · AP-2 Zaragoza – Fraga",
+          "cantidad": 1,
+          "precio": 9.8,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "15/09 · 6604 MCX · AP-7 Valencia Sur – Silla",
+          "cantidad": 1,
+          "precio": 2.35,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "15/09 · 6604 MCX · AP-7 Castellón Norte – Torreblanca",
+          "cantidad": 1,
+          "precio": 6.4,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "15/09 · 6604 MCX · AP-2 Zaragoza – Fraga",
+          "cantidad": 1,
+          "precio": 9.8,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "16/09 · 4821 LKD · AP-7 Sagunto – Puçol",
+          "cantidad": 1,
+          "precio": 3.95,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "16/09 · 4821 LKD · AP-7 Valencia Sur – Silla",
+          "cantidad": 1,
+          "precio": 2.35,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "16/09 · 1937 MBF · AP-68 Logroño – Haro",
+          "cantidad": 1,
+          "precio": 5.6,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "16/09 · 1937 MBF · AP-7 Sagunto – Puçol",
+          "cantidad": 1,
+          "precio": 3.95,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "16/09 · 1937 MBF · AP-7 Valencia Sur – Silla",
+          "cantidad": 1,
+          "precio": 2.35,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "16/09 · 6604 MCX · AP-7 Girona Norte – La Jonquera",
+          "cantidad": 1,
+          "precio": 7.15,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "17/09 · 4821 LKD · AP-2 Zaragoza – Fraga",
+          "cantidad": 1,
+          "precio": 9.8,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "17/09 · 4821 LKD · AP-7 Girona Norte – La Jonquera",
+          "cantidad": 1,
+          "precio": 7.15,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "17/09 · 4821 LKD · AP-68 Logroño – Haro",
+          "cantidad": 1,
+          "precio": 5.6,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "17/09 · 1937 MBF · AP-7 Castellón Norte – Torreblanca",
+          "cantidad": 1,
+          "precio": 6.4,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "17/09 · 6604 MCX · AP-7 Valencia Sur – Silla",
+          "cantidad": 1,
+          "precio": 2.35,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "17/09 · 6604 MCX · AP-7 Castellón Norte – Torreblanca",
+          "cantidad": 1,
+          "precio": 6.4,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "18/09 · 4821 LKD · AP-7 Sagunto – Puçol",
+          "cantidad": 1,
+          "precio": 3.95,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "18/09 · 1937 MBF · AP-68 Logroño – Haro",
+          "cantidad": 1,
+          "precio": 5.6,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "18/09 · 1937 MBF · AP-7 Sagunto – Puçol",
+          "cantidad": 1,
+          "precio": 3.95,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "18/09 · 6604 MCX · AP-7 Girona Norte – La Jonquera",
+          "cantidad": 1,
+          "precio": 7.15,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "18/09 · 6604 MCX · AP-68 Logroño – Haro",
+          "cantidad": 1,
+          "precio": 5.6,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "18/09 · 6604 MCX · AP-7 Sagunto – Puçol",
+          "cantidad": 1,
+          "precio": 3.95,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "21/09 · 4821 LKD · AP-2 Zaragoza – Fraga",
+          "cantidad": 1,
+          "precio": 9.8,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "21/09 · 1937 MBF · AP-7 Castellón Norte – Torreblanca",
+          "cantidad": 1,
+          "precio": 6.4,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "21/09 · 1937 MBF · AP-2 Zaragoza – Fraga",
+          "cantidad": 1,
+          "precio": 9.8,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "21/09 · 6604 MCX · AP-7 Valencia Sur – Silla",
+          "cantidad": 1,
+          "precio": 2.35,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "21/09 · 6604 MCX · AP-7 Castellón Norte – Torreblanca",
+          "cantidad": 1,
+          "precio": 6.4,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "21/09 · 6604 MCX · AP-2 Zaragoza – Fraga",
+          "cantidad": 1,
+          "precio": 9.8,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "22/09 · 4821 LKD · AP-7 Sagunto – Puçol",
+          "cantidad": 1,
+          "precio": 3.95,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "22/09 · 4821 LKD · AP-7 Valencia Sur – Silla",
+          "cantidad": 1,
+          "precio": 2.35,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "22/09 · 1937 MBF · AP-68 Logroño – Haro",
+          "cantidad": 1,
+          "precio": 5.6,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "22/09 · 1937 MBF · AP-7 Sagunto – Puçol",
+          "cantidad": 1,
+          "precio": 3.95,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "22/09 · 1937 MBF · AP-7 Valencia Sur – Silla",
+          "cantidad": 1,
+          "precio": 2.35,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "22/09 · 6604 MCX · AP-7 Girona Norte – La Jonquera",
+          "cantidad": 1,
+          "precio": 7.15,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "23/09 · 4821 LKD · AP-2 Zaragoza – Fraga",
+          "cantidad": 1,
+          "precio": 9.8,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "23/09 · 4821 LKD · AP-7 Girona Norte – La Jonquera",
+          "cantidad": 1,
+          "precio": 7.15,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "23/09 · 4821 LKD · AP-68 Logroño – Haro",
+          "cantidad": 1,
+          "precio": 5.6,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "23/09 · 1937 MBF · AP-7 Castellón Norte – Torreblanca",
+          "cantidad": 1,
+          "precio": 6.4,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "23/09 · 6604 MCX · AP-7 Valencia Sur – Silla",
+          "cantidad": 1,
+          "precio": 2.35,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "23/09 · 6604 MCX · AP-7 Castellón Norte – Torreblanca",
+          "cantidad": 1,
+          "precio": 6.4,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "24/09 · 4821 LKD · AP-7 Sagunto – Puçol",
+          "cantidad": 1,
+          "precio": 3.95,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "24/09 · 1937 MBF · AP-68 Logroño – Haro",
+          "cantidad": 1,
+          "precio": 5.6,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "24/09 · 1937 MBF · AP-7 Sagunto – Puçol",
+          "cantidad": 1,
+          "precio": 3.95,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "24/09 · 6604 MCX · AP-7 Girona Norte – La Jonquera",
+          "cantidad": 1,
+          "precio": 7.15,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "24/09 · 6604 MCX · AP-68 Logroño – Haro",
+          "cantidad": 1,
+          "precio": 5.6,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "24/09 · 6604 MCX · AP-7 Sagunto – Puçol",
+          "cantidad": 1,
+          "precio": 3.95,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "25/09 · 4821 LKD · AP-2 Zaragoza – Fraga",
+          "cantidad": 1,
+          "precio": 9.8,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "25/09 · 4821 LKD · AP-7 Girona Norte – La Jonquera",
+          "cantidad": 1,
+          "precio": 7.15,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "25/09 · 1937 MBF · AP-7 Castellón Norte – Torreblanca",
+          "cantidad": 1,
+          "precio": 6.4,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "25/09 · 1937 MBF · AP-2 Zaragoza – Fraga",
+          "cantidad": 1,
+          "precio": 9.8,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "25/09 · 1937 MBF · AP-7 Girona Norte – La Jonquera",
+          "cantidad": 1,
+          "precio": 7.15,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "25/09 · 6604 MCX · AP-7 Valencia Sur – Silla",
+          "cantidad": 1,
+          "precio": 2.35,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "28/09 · 4821 LKD · AP-7 Sagunto – Puçol",
+          "cantidad": 1,
+          "precio": 3.95,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "28/09 · 4821 LKD · AP-7 Valencia Sur – Silla",
+          "cantidad": 1,
+          "precio": 2.35,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "28/09 · 1937 MBF · AP-68 Logroño – Haro",
+          "cantidad": 1,
+          "precio": 5.6,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "28/09 · 1937 MBF · AP-7 Sagunto – Puçol",
+          "cantidad": 1,
+          "precio": 3.95,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "28/09 · 1937 MBF · AP-7 Valencia Sur – Silla",
+          "cantidad": 1,
+          "precio": 2.35,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "28/09 · 6604 MCX · AP-7 Girona Norte – La Jonquera",
+          "cantidad": 1,
+          "precio": 7.15,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "29/09 · 4821 LKD · AP-2 Zaragoza – Fraga",
+          "cantidad": 1,
+          "precio": 9.8,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "29/09 · 4821 LKD · AP-7 Girona Norte – La Jonquera",
+          "cantidad": 1,
+          "precio": 7.15,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "29/09 · 4821 LKD · AP-68 Logroño – Haro",
+          "cantidad": 1,
+          "precio": 5.6,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "29/09 · 1937 MBF · AP-7 Castellón Norte – Torreblanca",
+          "cantidad": 1,
+          "precio": 6.4,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "29/09 · 6604 MCX · AP-7 Valencia Sur – Silla",
+          "cantidad": 1,
+          "precio": 2.35,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "29/09 · 6604 MCX · AP-7 Castellón Norte – Torreblanca",
+          "cantidad": 1,
+          "precio": 6.4,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "30/09 · 4821 LKD · AP-7 Sagunto – Puçol",
+          "cantidad": 1,
+          "precio": 3.95,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "30/09 · 1937 MBF · AP-68 Logroño – Haro",
+          "cantidad": 1,
+          "precio": 5.6,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "30/09 · 1937 MBF · AP-7 Sagunto – Puçol",
+          "cantidad": 1,
+          "precio": 3.95,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "30/09 · 6604 MCX · AP-7 Girona Norte – La Jonquera",
+          "cantidad": 1,
+          "precio": 7.15,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "30/09 · 6604 MCX · AP-68 Logroño – Haro",
+          "cantidad": 1,
+          "precio": 5.6,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "30/09 · 6604 MCX · AP-7 Sagunto – Puçol",
+          "cantidad": 1,
+          "precio": 3.95,
+          "iva_pct": 21
+        }
+      ]
+    }
+  ],
+  "notas": [
+    "Una factura de varias páginas: 132 líneas, un paso de peaje por línea.",
+    "Cada página acaba con \"Suma y sigue\": son subtotales, no el total.",
+    "La cabecera (emisor, receptor, número) solo está en la página 1. Los totales solo en la última.",
+    "La suma de las líneas tiene que dar la base imponible."
+  ]
+}

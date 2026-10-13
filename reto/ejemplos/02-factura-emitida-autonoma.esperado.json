@@ -1,0 +1,56 @@
+{
+  "fichero": "02-factura-emitida-autonoma.pdf",
+  "cliente_asesoria": {
+    "nombre": "Laura Martín Ortega",
+    "nif": "20456789Z"
+  },
+  "facturas_esperadas": [
+    {
+      "tipo": "emitida",
+      "numero": "LM-2026-029",
+      "fecha": "2026-10-06",
+      "vencimiento": "2026-11-05",
+      "contraparte": "Bodegas Terra Alta Coop. V.",
+      "contraparte_nif": "F46158200",
+      "concepto": "Rediseño etiqueta gama reserva, Adaptaciones etiqueta (3 formatos), Ficha de producto para web",
+      "categoria": "ventas",
+      "base_imponible": 1990,
+      "iva_pct": 21,
+      "iva_importe": 417.9,
+      "irpf_pct": 15,
+      "irpf_importe": 298.5,
+      "total": 2109.4,
+      "desglose_iva": [
+        {
+          "pct": 21,
+          "base": 1990,
+          "cuota": 417.9
+        }
+      ],
+      "lineas": [
+        {
+          "concepto": "Rediseño etiqueta gama reserva",
+          "cantidad": 1,
+          "precio": 1200,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "Adaptaciones etiqueta (3 formatos)",
+          "cantidad": 3,
+          "precio": 150,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "Ficha de producto para web",
+          "cantidad": 4,
+          "precio": 85,
+          "iva_pct": 21
+        }
+      ]
+    }
+  ],
+  "notas": [
+    "Aquí el cliente de la asesoría es el EMISOR: es una factura emitida (ingreso), no un gasto.",
+    "Autónoma que factura a empresa: retención IRPF 15%."
+  ]
+}

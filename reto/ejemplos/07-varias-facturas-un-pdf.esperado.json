@@ -1,0 +1,150 @@
+{
+  "fichero": "07-varias-facturas-un-pdf.pdf",
+  "cliente_asesoria": {
+    "nombre": "Laura Martín Ortega",
+    "nif": "20456789Z"
+  },
+  "facturas_esperadas": [
+    {
+      "tipo": "recibida",
+      "numero": "CR2026/0505",
+      "fecha": "2026-10-01",
+      "vencimiento": "2026-10-10",
+      "contraparte": "Coworking Ruzafa SL",
+      "contraparte_nif": "B98556103",
+      "concepto": "Puesto fijo coworking - octubre 2026",
+      "categoria": "alquiler",
+      "base_imponible": 220,
+      "iva_pct": 21,
+      "iva_importe": 46.2,
+      "irpf_pct": 0,
+      "irpf_importe": 0,
+      "total": 266.2,
+      "desglose_iva": [
+        {
+          "pct": 21,
+          "base": 220,
+          "cuota": 46.2
+        }
+      ],
+      "lineas": [
+        {
+          "concepto": "Puesto fijo coworking - octubre 2026",
+          "cantidad": 1,
+          "precio": 220,
+          "iva_pct": 21
+        }
+      ]
+    },
+    {
+      "tipo": "recibida",
+      "numero": "SW2026/0423",
+      "fecha": "2026-10-02",
+      "vencimiento": null,
+      "contraparte": "Pixelia Software SL",
+      "contraparte_nif": "B28944106",
+      "concepto": "Suscripción mensual plan Pro",
+      "categoria": "software",
+      "base_imponible": 69.9,
+      "iva_pct": 21,
+      "iva_importe": 14.68,
+      "irpf_pct": 0,
+      "irpf_importe": 0,
+      "total": 84.58,
+      "desglose_iva": [
+        {
+          "pct": 21,
+          "base": 69.9,
+          "cuota": 14.68
+        }
+      ],
+      "lineas": [
+        {
+          "concepto": "Suscripción mensual plan Pro",
+          "cantidad": 1,
+          "precio": 69.9,
+          "iva_pct": 21
+        }
+      ]
+    },
+    {
+      "tipo": "recibida",
+      "numero": "OT2026/0686",
+      "fecha": "2026-10-06",
+      "vencimiento": "2026-10-20",
+      "contraparte": "Onda Telecom SL",
+      "contraparte_nif": "B98763212",
+      "concepto": "Cuota mensual tarifa negocio, Consumo fuera de tarifa",
+      "categoria": "telefonía",
+      "base_imponible": 37.35,
+      "iva_pct": 21,
+      "iva_importe": 7.84,
+      "irpf_pct": 0,
+      "irpf_importe": 0,
+      "total": 45.19,
+      "desglose_iva": [
+        {
+          "pct": 21,
+          "base": 37.35,
+          "cuota": 7.84
+        }
+      ],
+      "lineas": [
+        {
+          "concepto": "Cuota mensual tarifa negocio",
+          "cantidad": 1,
+          "precio": 32.5,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "Consumo fuera de tarifa",
+          "cantidad": 1,
+          "precio": 4.85,
+          "iva_pct": 21
+        }
+      ]
+    },
+    {
+      "tipo": "recibida",
+      "numero": "PF2026/0828",
+      "fecha": "2026-10-07",
+      "vencimiento": null,
+      "contraparte": "Papelería Folio SL",
+      "contraparte_nif": "B46300984",
+      "concepto": "PAPEL A3 COUCHE 170G, IMPRESION PRUEBA COLOR A3",
+      "categoria": "material",
+      "base_imponible": 58.8,
+      "iva_pct": 21,
+      "iva_importe": 12.35,
+      "irpf_pct": 0,
+      "irpf_importe": 0,
+      "total": 71.15,
+      "desglose_iva": [
+        {
+          "pct": 21,
+          "base": 58.8,
+          "cuota": 12.35
+        }
+      ],
+      "lineas": [
+        {
+          "concepto": "PAPEL A3 COUCHE 170G",
+          "cantidad": 2,
+          "precio": 18.9,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "IMPRESION PRUEBA COLOR A3",
+          "cantidad": 12,
+          "precio": 1.75,
+          "iva_pct": 21
+        }
+      ]
+    }
+  ],
+  "notas": [
+    "Un solo PDF con las facturas de gastos de octubre, escaneadas juntas: una factura por página.",
+    "La página 5 repite la página 3 (Onda Telecom): hay 4 facturas, no 5.",
+    "Mezcla formatos: A4 y un ticket estrecho."
+  ]
+}

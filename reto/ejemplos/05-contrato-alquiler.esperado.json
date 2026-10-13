@@ -1,0 +1,26 @@
+{
+  "fichero": "05-contrato-alquiler.pdf",
+  "cliente_asesoria": {
+    "nombre": "Bar Restaurante La Esquina SL",
+    "nif": "B46884326"
+  },
+  "facturas_esperadas": [],
+  "tipo_documento": "contrato_alquiler",
+  "datos_clave": {
+    "arrendador": {
+      "nombre": "Inmobiliaria Arco SL",
+      "nif": "B46213583"
+    },
+    "inmueble": "C/ Cuba 45",
+    "fecha_firma": "2021-10-20",
+    "inicio": "2021-11-01",
+    "fin": "2026-10-31",
+    "renta_mensual": 1200,
+    "fianza_meses": 2
+  },
+  "notas": [
+    "No es una factura: no debe crear ninguna fila en facturas.",
+    "Vence el 31/10/2026 (5 años desde el 01/11/2021), prorrogable salvo preaviso de dos meses.",
+    "La renta del contrato es 1.200 €, pero las facturas de Arco dicen 1.350 €: se ha actualizado con el IPC. Contrato y facturas no dan la misma cifra."
+  ]
+}

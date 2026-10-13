@@ -1,0 +1,67 @@
+{
+  "fichero": "04-varios-tipos-iva.pdf",
+  "cliente_asesoria": {
+    "nombre": "Bar Restaurante La Esquina SL",
+    "nif": "B46884326"
+  },
+  "facturas_esperadas": [
+    {
+      "tipo": "recibida",
+      "numero": "DBM 26/3391",
+      "fecha": "2026-10-08",
+      "vencimiento": "2026-11-07",
+      "contraparte": "Distribuciones Bebidas Mediterráneo SL",
+      "contraparte_nif": "B46027140",
+      "concepto": "Barril cerveza 30L, Vino de la casa (caja 6 ud), Refrescos surtidos (caja 24 ud), Agua mineral 50cl (caja 24 ud)",
+      "categoria": "compras",
+      "base_imponible": 560.2,
+      "iva_pct": null,
+      "iva_importe": 104.31,
+      "irpf_pct": 0,
+      "irpf_importe": 0,
+      "total": 664.51,
+      "desglose_iva": [
+        {
+          "pct": 21,
+          "base": 439,
+          "cuota": 92.19
+        },
+        {
+          "pct": 10,
+          "base": 121.2,
+          "cuota": 12.12
+        }
+      ],
+      "lineas": [
+        {
+          "concepto": "Barril cerveza 30L",
+          "cantidad": 4,
+          "precio": 89.5,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "Vino de la casa (caja 6 ud)",
+          "cantidad": 3,
+          "precio": 27,
+          "iva_pct": 21
+        },
+        {
+          "concepto": "Refrescos surtidos (caja 24 ud)",
+          "cantidad": 5,
+          "precio": 16.8,
+          "iva_pct": 10
+        },
+        {
+          "concepto": "Agua mineral 50cl (caja 24 ud)",
+          "cantidad": 6,
+          "precio": 6.2,
+          "iva_pct": 10
+        }
+      ]
+    }
+  ],
+  "notas": [
+    "Una sola factura con DOS tipos de IVA (21% y 10%).",
+    "El esquema actual de `facturas` solo tiene un iva_pct: ¿cómo lo guardarías?"
+  ]
+}
