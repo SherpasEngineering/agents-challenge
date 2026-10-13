@@ -6,7 +6,12 @@ App interna para asesores de autónomos y pymes: clientes, facturas, resultados 
 
 ## Restricción: la IA es un servicio aparte
 
-Las dos IAs van en un servicio propio, desplegado en **otra máquina**. Nada de código de IA en `api/` ni en `web/`. La app sigue siendo la dueña de los datos y de la pantalla, y si la máquina de IA cae o va lenta, la app sigue funcionando.
+Hay **dos máquinas**:
+
+- **Máquina 1, la app:** API, web, Postgres y MinIO (este repo).
+- **Máquina 2, el servicio de IA:** las dos IAs, extracción y chat, en un mismo servicio.
+
+Nada de código de IA en `api/` ni en `web/`. La app sigue siendo la dueña de los datos y de la pantalla, y si la máquina de IA cae o va lenta, la app sigue funcionando.
 
 ---
 
