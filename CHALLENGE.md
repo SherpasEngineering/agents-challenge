@@ -1,6 +1,6 @@
 # Reto: IA en el panel de asesoría
 
-App interna para asesores de autónomos y pymes: clientes, facturas, resultados trimestrales y gráficas ([README](README.md) para arrancarla). Queremos meter **dos IAs** y que nos digas **cómo lo harías**.
+App interna para asesores de autónomos y pymes: clientes, facturas, resultados trimestrales y gráficas ([README](README.md) para arrancarla). Queremos meter **tres IAs** y que nos digas **cómo lo harías**.
 
 **No hay que implementar nada.** Buscamos un análisis: opciones, puntos fuertes y débiles, qué recomiendas y por qué.
 
@@ -9,7 +9,7 @@ App interna para asesores de autónomos y pymes: clientes, facturas, resultados 
 Hay **dos máquinas**:
 
 - **Máquina 1, la app:** API, web, Postgres y MinIO (este repo).
-- **Máquina 2, el servicio de IA:** las dos IAs, extracción y chat, en un mismo servicio.
+- **Máquina 2, el servicio de IA:** las tres IAs (extracción, chat y análisis) en un mismo servicio.
 
 Nada de código de IA en `api/` ni en `web/`. La app sigue siendo la dueña de los datos y de la pantalla, y si la máquina de IA cae o va lenta, la app sigue funcionando.
 
@@ -63,6 +63,28 @@ Lo que queremos que pienses:
 
 ---
 
+## IA 3: agente de análisis
+
+Para preguntas que no salen de una consulta: el agente escribe código (Python, SQL...), lo ejecuta en un **sandbox** sobre los datos y devuelve el resultado (una tabla, una gráfica, un CSV o un informe corto) junto con el código que ha usado.
+
+Cosas que le pedirían:
+
+- "¿Qué clientes dependen más del verano? Compara la estacionalidad de sus ventas."
+- "Busca gastos raros por proveedor en 2026." (la luz del bar en julio y agosto)
+- "Si el gasoil de Transportes sigue subiendo así, ¿cuánto gastará hasta diciembre?"
+- "Estima el IVA del 4T de cada cliente con lo que llevamos de octubre."
+- "Hazme un Excel con la evolución trimestral de toda mi cartera."
+
+Lo que queremos que pienses:
+
+- **Sandbox:** qué usarías (contenedor, microVM, WebAssembly, un servicio gestionado...) y dónde corre: ¿en la máquina 2 o aparte? Aislamiento, red, límites de CPU, memoria y tiempo.
+- **Datos dentro del sandbox:** ¿le pasas una copia (CSV, Parquet, SQLite...) o se conecta en modo lectura? ¿Cómo evitas que vea datos de otros asesores o que los saque fuera?
+- **Resultados:** cómo vuelven a la app las tablas, gráficas y ficheros, y cómo sabe el asesor que la cifra está bien (¿le enseñas el código?).
+- **Relación con el chat:** ¿es otra IA o una tool que el chat usa cuando la pregunta es pesada? ¿Cuándo va cada uno?
+- **Coste y tiempo:** cuánto tarda y cuesta un análisis, y qué haces si el código falla o no termina.
+
+---
+
 ## Qué te pedimos
 
 Para cada IA:
@@ -89,5 +111,5 @@ Valoramos **criterio** (elegir y descartar con motivos), **autonomía**, **clari
 ## El repo en un minuto
 
 - Esquema: [`db/schema.sql`](db/schema.sql). API: [`api/src/routes/`](api/src/routes/).
-- La IA se enchufaría en "Extraer con IA" de [`FacturasTab.tsx`](web/src/components/FacturasTab.tsx) y en [`ChatBurbuja.tsx`](web/src/components/ChatBurbuja.tsx).
+- La IA se enchufaría en "Extraer con IA" de [`FacturasTab.tsx`](web/src/components/FacturasTab.tsx) y en [`ChatBurbuja.tsx`](web/src/components/ChatBurbuja.tsx). El agente de análisis no tiene sitio en la pantalla: propón tú cómo se lanza.
 - Datos: 4 clientes, enero 2025 a octubre 2026, sin PDFs. Detalles en el [README](README.md#los-datos-de-ejemplo).
