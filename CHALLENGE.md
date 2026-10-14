@@ -4,6 +4,8 @@ App interna para asesores de autónomos y pymes: clientes, facturas, resultados 
 
 **No hay que implementar nada.** Buscamos un análisis: opciones, puntos fuertes y débiles, qué recomiendas y por qué.
 
+**Tampoco hace falta estudiar escala ni costes.** Queremos saber qué solución funcionaría mejor.
+
 ## Restricción: la IA es un servicio aparte
 
 Hay **dos máquinas**:
@@ -34,10 +36,9 @@ En [`reto/ejemplos/`](reto/ejemplos/) hay 7 PDFs, cada uno con lo que esperamos 
 Lo que queremos que pienses:
 
 - **PDFs largos:** ¿todo de golpe, página a página o por trozos? ¿Cómo sabes dónde empieza y acaba cada factura? ¿Cómo juntas la cabecera (página 1) con los totales (última página)?
-- **¿PDF directo o preprocesado?** Pasar el PDF o las imágenes a un modelo multimodal, o sacar antes el texto (capa de texto, OCR, Markdown) y pasar solo eso. Calidad, tokens, coste y latencia de cada opción. ¿Cambia la respuesta si el PDF es un escaneo?
+- **¿PDF directo o preprocesado?** Pasar el PDF o las imágenes a un modelo multimodal, o sacar antes el texto (capa de texto, OCR, Markdown) y pasar solo eso. ¿Qué funciona mejor y cuándo? ¿Cambia la respuesta si el PDF es un escaneo?
 - **Velocidad:** ¿qué se puede paralelizar? ¿Síncrono o en cola? ¿Cuánto tardaría el 06?
-- **Coste:** por documento y al mes, con tus supuestos de volumen. Modelo grande o pequeño, cascadas, caché, cuándo no hace falta un LLM.
-- **Qué hace el modelo y qué hace el código:** IVA, IRPF, totales, desglose, NIF, fechas, emitida o recibida... ¿Qué calculas o compruebas de forma determinista? ¿Qué haces cuando no cuadra?
+- **Qué hace el modelo y qué hace el código:** IVA, IRPF, totales, desglose, NIF, fechas, emitida o recibida... ¿Qué calculas o compruebas de forma determinista, sin modelo? ¿Qué haces cuando no cuadra?
 - **Duplicados** y **documentos que no son facturas**.
 
 ---
@@ -65,23 +66,27 @@ Lo que queremos que pienses:
 
 ## IA 3: agente de análisis
 
-Para preguntas que no salen de una consulta: el agente escribe código (Python, SQL...), lo ejecuta en un **sandbox** sobre los datos y devuelve el resultado (una tabla, una gráfica, un CSV o un informe corto) junto con el código que ha usado.
+Para preguntas que no salen de una consulta: el agente escribe código (Python con pandas, SQL...), lo ejecuta en un **sandbox** y devuelve el resultado junto con el código que ha usado.
 
-Cosas que le pedirían:
+**El caso que queremos:** "Coge las facturas recibidas de 2026 del bar, analízalas y súbeme el resultado."
 
-- "¿Qué clientes dependen más del verano? Compara la estacionalidad de sus ventas."
-- "Busca gastos raros por proveedor en 2026." (la luz del bar en julio y agosto)
-- "Si el gasoil de Transportes sigue subiendo así, ¿cuánto gastará hasta diciembre?"
-- "Estima el IVA del 4T de cada cliente con lo que llevamos de octubre."
-- "Hazme un Excel con la evolución trimestral de toda mi cartera."
+1. Las facturas del bar llegan de la app (máquina 1) al sandbox (máquina 2).
+2. El agente escribe un script con pandas: gasto por proveedor y mes, picos (la luz de julio y agosto), comparación con 2025.
+3. El sandbox lo ejecuta y genera un Excel y una gráfica.
+4. El resultado vuelve a la app y queda guardado en el cliente. Hoy la app solo guarda documentos subidos: si necesitas otro sitio, propónlo.
+
+Otras cosas que le pedirían: "¿Qué clientes dependen más del verano?", "Si el gasoil de Transportes sigue subiendo así, ¿cuánto gastará hasta diciembre?", "Hazme un Excel con la evolución trimestral de toda mi cartera".
 
 Lo que queremos que pienses:
 
+- **Comunicación en los dos sentidos entre la máquina 2 y la app:** la ida (facturas al sandbox) y la vuelta (Excel y gráfica a la app).
+  - ¿Los datos **pasan por el agente** (el modelo los pide a la API y se los da al sandbox) o van **directos** entre el sandbox y la app, y el agente solo dirige?
+  - Opciones: el agente llama a la API y copia los datos al sandbox; el sandbox llama a la API con un token limitado a ese cliente; la app deja un export (CSV, Parquet) en MinIO con una URL firmada... Y lo mismo para la vuelta: el agente sube el resultado por la API, el sandbox lo sube directo a MinIO, la app lo recoge cuando le avisan.
+  - ¿Quién da los permisos y cuánto duran? ¿Qué datos entran en el contexto del modelo y cuáles no hace falta que entren?
 - **Sandbox:** qué usarías (contenedor, microVM, WebAssembly, un servicio gestionado...) y dónde corre: ¿en la máquina 2 o aparte? Aislamiento, red, límites de CPU, memoria y tiempo.
-- **Datos dentro del sandbox:** ¿le pasas una copia (CSV, Parquet, SQLite...) o se conecta en modo lectura? ¿Cómo evitas que vea datos de otros asesores o que los saque fuera?
-- **Resultados:** cómo vuelven a la app las tablas, gráficas y ficheros, y cómo sabe el asesor que la cifra está bien (¿le enseñas el código?).
-- **Relación con el chat:** ¿es otra IA o una tool que el chat usa cuando la pregunta es pesada? ¿Cuándo va cada uno?
-- **Coste y tiempo:** cuánto tarda y cuesta un análisis, y qué haces si el código falla o no termina.
+- **Resultados:** cómo sabe el asesor que la cifra está bien (¿le enseñas el código?).
+- **Relación con el chat:** ¿es otra IA o una tool que el chat usa cuando la pregunta es pesada?
+- **Fallos:** qué haces si el código falla o no termina.
 
 ---
 
