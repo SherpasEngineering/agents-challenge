@@ -108,8 +108,18 @@ Si te da tiempo, elige alguno de estos: privacidad (datos fiscales, RGPD), promp
 - Si pruebas algo (un prompt o un script contra los ejemplos 06 y 07), cuéntanos qué viste. Es opcional.
 
 1. **Hoy** recibes el reto: **24 h** para investigar y preparar una primera versión.
-2. **Sesión con nosotros**: nos lo cuentas y te damos feedback.
+2. **Sesión con nosotros**: nos cuentas cómo has trabajado y tu propuesta, y te damos feedback (ver abajo).
 3. **24 h** más para entregar la versión final.
+
+### La sesión
+
+Antes de la presentación, cuéntanos cómo has trabajado:
+
+1. **Tu punto de partida:** con qué de estos problemas tenías experiencia (extracción de documentos, chats con tools, sandboxes...) y con qué no. No pasa nada por no conocer algo: queremos saber de dónde partes.
+2. **Cómo has investigado:** qué herramientas has usado (Cursor, Claude, ChatGPT, documentación, papers...) y para qué cada una.
+3. **Tu workflow:** si tienes algo que destacar, como skills, reglas, varios agentes en paralelo o prompts propios. Si puedes, enséñanoslo.
+
+Después, **la presentación**: tu propuesta para las tres IAs.
 
 Valoramos **criterio** (elegir y descartar con motivos), **autonomía**, **claridad** (que podamos decir "tira por ahí") y **honestidad** (qué no sabes y qué habría que probar).
 
